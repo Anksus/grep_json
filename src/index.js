@@ -42,10 +42,10 @@ const logic = (props) => {
   }
 };
 
-const customerFile = fs.readFileSync("./json_sample.log", "utf-8");
+const val = fs.readFileSync(fileName, "utf-8");
 
-if (typeof customerFile === "string") {
-  console.log("yes");
-  const val = JSON.parse(customerFile);
-  console.log(val);
-}
+const main = () => {
+  logic(val);
+};
+
+main();
