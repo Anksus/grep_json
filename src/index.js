@@ -43,9 +43,9 @@ const logic = (props) => {
 };
 
 const val = fs.readFileSync(fileName, "utf-8");
-
+const logs = JSON.parse(val);
 const main = () => {
-  logic(val);
+  logic(logs);
 };
 
 main();
